@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icons link from Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- CSS page -->
+     <link rel="stylesheet" href="style.css">
+    <title>StayVista</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>StayVista</h1>
+        </div>
+        <ul class="links">
+            <li><a class="link" href="#">home</a></li>
+            <li><a class="link" href="#destinations">destinations</a></li>
+            <li><a class="link" href="#hotels">hotels</a></li>
+            <li><a class="link" href="#">about</a></li>
+            <li><a class="link" href="#">contact</a></li>
+        </ul>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button><i class="fa-regular fa-heart"></i></button>
+            <i class="fa-solid fa-user"></i>
+            <button><i class="fa-solid fa-bars menu_icon hide"></i></button>
+        </div>
+    </header>
+    <main>
+        <section class="home">
+            <p>plan your next getaway</p>
+            <h2>find your perfect<br>hotel stay</h2>
+            <span>Discover amazing hotels, great deals and unforgettable<br>experience around the world.</span>
+            <form class="search_box">
+                <input class="dis" type="text" placeholder="Enter destinations or hotel name" required>
+                <input class="date first" type="date" required>
+                <input class="date" type="date" required>
+                <button type="submit">search hotels</button>
+            </form>
+        </section>
+        <div class="all_sections">
+            <div class="right_sec">
+                <section class="popular" id="destinations">
+                    <div class="sec_header">
+                        <div class="left">
+                            <h3>popular destinations</h3>
+                            <p>Explore top destinations and find the perfect place to stay.</p>
+                        </div>
+                        <div class="right">
+                            <button class="learn-more">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">view all</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <div class="image">
+                            <img src="img/eiffel.jpg" alt="photo">
+                            <div class="text_box">
+                                <div class="name">
+                                    <p class="city"><i class="bxf bx-city"></i> Paris</p>
+                                    <p class="location"><i class="fa-solid fa-location-dot"></i> France</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/santorini.jpg" alt="photo">
+                            <div class="text_box">
+                                <div class="name">
+                                    <p class="city"><i class="bxf bx-city"></i> Santorini</p>
+                                    <p class="location"><i class="fa-solid fa-location-dot"></i> Greece</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/new york.jpg" alt="photo">
+                            <div class="text_box">
+                                <div class="name">
+                                    <p class="city"><i class="bxf bx-city"></i> New York</p>
+                                    <p class="location"><i class="fa-solid fa-location-dot"></i> USA</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/dubai.jpg" alt="photo">
+                            <div class="text_box">
+                                <div class="name">
+                                    <p class="city"><i class="bxf bx-city"></i> Dubai</p>
+                                    <p class="location"><i class="fa-solid fa-location-dot"></i> UAE</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recommend" id="hotels">
+                    <div class="sec_header">
+                        <div class="left">
+                            <h3>recommended hotels</h3>
+                            <p>Handpicked stays for your next adventure</p>
+                        </div>
+                        <div class="right">
+                            <button class="learn-more">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">view all</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="tag">
+                                <p class="best">best seller</p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
+                            </div>
+                            <div class="image_box">
+                                <img src="img/desert.png" alt="photo">
+                            </div>
+                            <div class="details">
+                                <p class="name">sunset bay resort & spa</p>
+                                <div class="location">
+                                    <i class="bxf bx-location"></i>
+                                    <p>Bali, Indonesia</p>
+                                </div>
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.8 <span>(1.2k reviews)</span></p>
+                                </div>
+                                <div class="features">
+                                    <div class="wifi">
+                                        <i class="fa-solid fa-wifi"></i>
+                                        <span>WIFI</span>
+                                    </div>
+                                    <div class="pool">
+                                        <i class="fa-solid fa-person-swimming"></i>
+                                        <span>Pool</span>
+                                    </div>
+                                    <div class="gym">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <span>Gym</span>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="price">
+                                        <p class="num">$189</p>
+                                        <span>/ night</span>
+                                    </div>
+                                    <button class="book">book now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="tag">
+                                <p class="luxury">luxury</p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
+                            </div>
+                            <div class="image_box">
+                                <img src="img/pexels-sokil-2159771144-38406370.jpg" alt="photo">
+                            </div>
+                            <div class="details">
+                                <p class="name">the grand residence</p>
+                                <div class="location">
+                                    <i class="bxf bx-location"></i>
+                                    <p>New York, USA</p>
+                                </div>
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.7 <span>(856 reviews)</span></p>
+                                </div>
+                                <div class="features">
+                                    <div class="wifi">
+                                        <i class="fa-solid fa-wifi"></i>
+                                        <span>WIFI</span>
+                                    </div>
+                                    <div class="pool">
+                                        <i class="fa-solid fa-person-swimming"></i>
+                                        <span>Pool</span>
+                                    </div>
+                                    <div class="gym">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <span>Gym</span>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="price">
+                                        <p class="num">$299</p>
+                                        <span>/ night</span>
+                                    </div>
+                                    <button class="book">book now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="tag">
+                                <p class="trend">trending</p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
+                            </div>
+                            <div class="image_box">
+                                <img src="img/pexels-pixabay-290597.jpg" alt="photo">
+                            </div>
+                            <div class="details">
+                                <p class="name">aegean breeze hotel</p>
+                                <div class="location">
+                                    <i class="bxf bx-location"></i>
+                                    <p>Santorini, Greece</p>
+                                </div>
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.6 <span>(642 reviews)</span></p>
+                                </div>
+                                <div class="features">
+                                    <div class="wifi">
+                                        <i class="fa-solid fa-wifi"></i>
+                                        <span>WIFI</span>
+                                    </div>
+                                    <div class="pool">
+                                        <i class="fa-solid fa-person-swimming"></i>
+                                        <span>Pool</span>
+                                    </div>
+                                    <div class="gym">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <span>Gym</span>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="price">
+                                        <p class="num">$172</p>
+                                        <span>/ night</span>
+                                    </div>
+                                    <button class="book">book now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="tag">
+                                <p class="value">great value</p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
+                            </div>
+                            <div class="image_box">
+                                <img src="img/pexels-pixabay-261101.jpg" alt="photo">
+                            </div>
+                            <div class="details">
+                                <p class="name">desert palm resort</p>
+                                <div class="location">
+                                    <i class="bxf bx-location"></i>
+                                    <p>Dubai, UAE</p>
+                                </div>
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.5 <span>(523 reviews)</span></p>
+                                </div>
+                                <div class="features">
+                                    <div class="wifi">
+                                        <i class="fa-solid fa-wifi"></i>
+                                        <span>WIFI</span>
+                                    </div>
+                                    <div class="pool">
+                                        <i class="fa-solid fa-person-swimming"></i>
+                                        <span>Pool</span>
+                                    </div>
+                                    <div class="gym">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <span>Gym</span>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="price">
+                                        <p class="num">$134</p>
+                                        <span>/ night</span>
+                                    </div>
+                                    <button class="book">book now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="left_banner">
+                <div class="offer">
+                    <img src="img/pexels-chris-the-island-3570397-38776858.jpg" alt="photo">
+                    <div class="text">
+                        <p>special offer</p>
+                        <h3>Up to 40% Off</h3>
+                        <span>Book your dream stay and get <br>exclusive discount.</span>
+                        <button>explore deals</button>
+                    </div>
+                </div>
+                <div class="why">
+                    <h3>why book with us?</h3>
+                    <div class="support">
+                        <div class="pricing fet">
+                            <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="text">
+                                <p>best price guarantee</p>
+                                <span>Find a low price? We'll match it.</span>
+                            </div>
+                        </div>
+                        <div class="cancellation fet">
+                            <div class="icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="text">
+                                <p>free cancellation</p>
+                                <span>Cancel up to 24 hours before check-in.</span>
+                            </div>
+                        </div>
+                        <div class="servise fet">
+                            <div class="icon"><i class="fa-solid fa-headphones"></i></div>
+                            <div class="text">
+                                <p>24/7 customer support</p>
+                                <span>We're here whenever you need us.</span>
+                            </div>
+                        </div>
+                        <div class="verify fet">
+                            <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+                            <div class="text">
+                                <p>verified hotels</p>
+                                <span>Trusted by millions of travelers.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip">
+                    <img src="img/pexels-blaz-gostincar-78161646-8796560.jpg" alt="photo">
+                    <div class="text_box">
+                        <div class="icon"><i class="bxf bx-plane-alt bx-remove-padding"></i></div>
+                        <div class="text">
+                            <h3>Get inspired for your<br>next trip</h3>
+                            <p>Explore our travel blog for trips.</p>
+                            <p>Ideas and amazing destinations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="last_footer">
+            <!-- <div></div> -->
+            <p>© 2025 <span>StayVista.</span> All Rights Reserved.</p>
+            <!-- <div></div> -->
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
