@@ -42,8 +42,18 @@
             <span>Discover amazing hotels, great deals and unforgettable<br>experience around the world.</span>
             <form class="search_box">
                 <input class="dis" type="text" placeholder="Enter destinations or hotel name" required>
-                <input class="date first" type="date" required>
-                <input class="date" type="date" required>
+                <div class="date_input in">
+                    <i class="fa-regular fa-calendar calendar"></i>
+                    <span data-default="Check in">Check in</span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <input type="date" required>
+                </div>
+                <div class="date_input out">
+                    <i class="fa-regular fa-calendar calendar"></i>
+                    <span data-default="Check out">Check out</span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                    <input type="date" required>
+                </div>
                 <button type="submit">search hotels</button>
             </form>
         </section>

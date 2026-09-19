@@ -118,25 +118,38 @@ header .icons button{
     background-color: transparent;
 }
 .home .search_box .dis{
-    width: 250px;
+    width: 230px;
 }
 .home .search_box .dis::placeholder{
     color: black;
 }
-.home .search_box .date{
+.date_input {
     position: relative;
-    padding-left: 30px;
-}
-input[type="date"]::-webkit-calendar-picker-indicator {
-    width: 20px;
-    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px 8px 2px;
+    border-right: 1px solid #ddd;
     cursor: pointer;
-    opacity: 0.7;
+    color: black;
+    font-size: 12px;
+    width: 145px;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+.date_input .calendar{
+    font-size: 16px;
+}
+.date_input input {
     position: absolute;
-    left: 0px;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
 }
+.date_input .arrow {
+    margin-left: auto;
+}
+/* .search_box .out{
+    border: none;
+} */
 .home input:focus{
     outline: none;
 }
@@ -781,7 +794,7 @@ button.learn-more:hover .button-text {
         width: 100%;
         border: none;
     }
-    .home .search_box .date{
+    .home .search_box .date_input{
         border: none;
         width: 48%;
     }
