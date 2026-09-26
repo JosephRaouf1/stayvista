@@ -1,13 +1,12 @@
 :root{
-    --bg:#0B0F0D;
-    --bg-2:#121713;
-    --bg-3:#181F1A;
     --ivory:#F3EFE6;
     --muted:#9C9A8E;
     --gold:#C9A24B;
-    --gold-dim:#8A7136;
-    --emerald:#1F3B32;
-    --line: rgba(243,239,230,0.12);
+    --navy: #002;
+    --navy-hover: #006;
+    --white: #fff;
+    --light-gray: #f0eeee;
+    --border-gray: #dad8d8;
     --header-font: "Playfair", serif;
     --p-font: "Inter", sans-serif;
 }
@@ -74,7 +73,7 @@ header .icons button{
     cursor: pointer;
 }
 
-/* --------------------------- home ------------------- */
+/* +==================== home ===================== */
 
 .home{
     width: 100%;
@@ -147,16 +146,13 @@ header .icons button{
 .date_input .arrow {
     margin-left: auto;
 }
-/* .search_box .out{
-    border: none;
-} */
 .home input:focus{
     outline: none;
 }
 .search_box button{
-    background-color: #002;
+    background-color: var(--navy);
     border: none;
-    color: white;
+    color: var(--white);
     text-transform: capitalize;
     padding: 10px 20px;
     border-radius: 20px;
@@ -164,10 +160,10 @@ header .icons button{
     transition: 0.3s;
 }
 .search_box button:hover{
-    background-color: #006;
+    background-color: var(--navy-hover);
 }
 
-/* ----------- popular ------------------- */
+/* =============== popular ============== */
 
 .all_sections{
     width: 100%;
@@ -190,7 +186,7 @@ header .icons button{
 .left h3{
     text-transform: capitalize;
     font-size: 28px;
-    color: #002;
+    color: var(--navy);
 }
 .left p{
     font-family: var(--p-font);
@@ -208,7 +204,6 @@ header .icons button{
 .popular .image{
     height: 180px;
     width: calc((100% - 20px) / 4);
-    /* width: 220px; */
     position: relative;
     transition: 0.3s;
     flex-shrink: 0;
@@ -226,7 +221,7 @@ header .icons button{
     position: absolute;
     left: 0px;
     bottom: 0px;
-    color: white;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -248,7 +243,7 @@ header .icons button{
 }
 .popular .name p i{
     font-size: 12px;
-    color: white;
+    color: var(--white);
 }
 .popular .text_box .arrow{
     border-radius: 50%;
@@ -265,7 +260,7 @@ header .icons button{
 }
 
 /* From Uiverse.io by cssbuttons-io */ 
-.learn-more{
+.view_all{
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -276,13 +271,13 @@ header .icons button{
   font-family: var(--p-font);
 }
 
-button.learn-more {
+button.view_all {
   width: 100px;
   height: 28px;
 }
 
 /* Circle */
-button.learn-more .circle {
+button.view_all .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 
   position: relative;
@@ -296,7 +291,7 @@ button.learn-more .circle {
 }
 
 /* Icon */
-button.learn-more .circle .icon.arrow {
+button.view_all .circle .icon.arrow {
   position: absolute;
 
   top: 50%;
@@ -318,7 +313,7 @@ button.learn-more .circle .icon.arrow {
 }
 
 /* Text */
-button.learn-more .button-text {
+button.view_all .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 
   position: absolute;
@@ -327,8 +322,6 @@ button.learn-more .button-text {
   left: 10px;
   right: 0;
   bottom: 0;
-
-  /* margin-left: 10px; */
 
   display: flex;
   align-items: center;
@@ -344,20 +337,20 @@ button.learn-more .button-text {
 }
 
 /* Hover */
-button.learn-more:hover .circle {
+button.view_all:hover .circle {
   width: 100%;
 }
 
-button.learn-more:hover .circle .icon.arrow {
+button.view_all:hover .circle .icon.arrow {
   transform: translate(-500%, -50%) rotate(45deg);
 }
 
-button.learn-more:hover .button-text {
+button.view_all:hover .button-text {
   color: #fff;
 }
 
 
-/* ------------ recommend -------------- */
+/* ============== recommend ============ */
 
 .recommend{
     margin-top: 20px;
@@ -373,7 +366,7 @@ button.learn-more:hover .button-text {
     height: 290px;
 }
 .cards .card i{
-    color: #002;
+    color: var(--navy);
 }
 .cards .card{
     width: 220px;
@@ -401,11 +394,11 @@ button.learn-more:hover .button-text {
 .cards .tag p{
     font-size: 10px;
     text-transform: capitalize;
-    color: white;
+    color: var(--white);
 }
 .cards .card .tag .fav i{
     font-size: 18px;
-    color: white;
+    color: var(--white);
     cursor: pointer;
 }
 .cards .tag .best{
@@ -447,7 +440,7 @@ button.learn-more:hover .button-text {
     text-transform: capitalize;
     font-size: 16px;
     margin-bottom: 5px;
-    color: #002;
+    color: var(--navy);
 }
 .cards .location,
 .cards .rate,
@@ -479,7 +472,7 @@ button.learn-more:hover .button-text {
     font-size: 14px;
 }
 .cards .price .num{
-    color: #002;
+    color: var(--navy);
 }
 .cards .price span{
     font-size: 10px;
@@ -488,31 +481,30 @@ button.learn-more:hover .button-text {
     padding: 8px 15px;
     border: none;
     border-radius: 20px;
-    background-color: #002;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
     text-transform: capitalize;
     cursor: pointer;
     transition: 0.3s;
 }
 .cards .last button:hover{
-    background-color: #006;
+    background-color: var(--navy-hover);
 }
 
-/* --------- left banner ------------ */
+/* ================= left banner ================= */
 
 .left_banner{
     padding-right: 5%;
     padding-left: 1%;
-    color: #002;
+    color: var(--navy);
     min-width: 300.75px;
     flex-shrink: 0;
 }
 .offer{
     width: 255.19px;
     height: 210px;
-    background-color: yellow;
     position: relative;
-    color: white;
+    color: var(--white);
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -557,7 +549,7 @@ button.learn-more:hover .button-text {
 }
 
 .why{
-    background-color: #f0eeee;
+    background-color: var(--light-gray);
     padding: 10px;
     border-radius: 5px;
     width: 255.19px;
@@ -567,7 +559,7 @@ button.learn-more:hover .button-text {
 }
 .support .pricing,
 .support .cancellation,
-.support .servise,
+.support .service,
 .support .verify{
     display: flex;
     align-items: center;
@@ -577,9 +569,9 @@ button.learn-more:hover .button-text {
 }
 .support .pricing .icon,
 .support .cancellation .icon,
-.support .servise .icon,
+.support .service .icon,
 .support .verify .icon{
-    background-color: white;
+    background-color: var(--white);
     padding: 6px 4px;
     font-size: 20px;
     border-radius: 50%;
@@ -587,18 +579,18 @@ button.learn-more:hover .button-text {
 }
 .support .pricing::after,
 .support .cancellation::after,
-.support .servise::after{
+.support .service::after{
     content: '';
     position: absolute;
     bottom: 0;
     right: 0;
     width: 82%;
     height: 1px;
-    background-color: rgb(218, 216, 216);
+    background-color: var(--border-gray);
 }
 .support .pricing p,
 .support .cancellation p,
-.support .servise p,
+.support .service p,
 .support .verify p{
     font-size: 14px;
     text-transform: capitalize;
@@ -606,7 +598,7 @@ button.learn-more:hover .button-text {
 }
 .support .pricing span,
 .support .cancellation span,
-.support .servise span,
+.support .service span,
 .support .verify span{
     font-size: 10px;
     font-family: var(--p-font);
@@ -617,7 +609,7 @@ button.learn-more:hover .button-text {
     height: 100px;
     position: relative;
     border-radius: 10px;
-    color: white;
+    color: var(--white);
     margin-top: 10px;
 }
 .trip img{
@@ -637,7 +629,7 @@ button.learn-more:hover .button-text {
 }
 .trip .icon{
     font-size: 30px;
-    color: white;
+    color: var(--white);
 }
 .trip .text h3{
     font-family: serif;
@@ -647,15 +639,220 @@ button.learn-more:hover .button-text {
 .trip .text p{
     font-size: 14px;
 }
+
+/* ================ about ================ */
+
+.about{
+    scroll-margin-top: 60px;
+    display: flex;
+    background-color: var(--navy);
+    align-items: center;
+    width: 100%;
+}
+.about .right_part{
+    padding: 0px 2% 0px 5%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+}
+.about img{
+    width: 400px;
+}
+.about .text_box p{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--gold);
+    position: relative;
+}
+.about .text_box p::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 30px;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--gold);
+}
+.about .text_box h3{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.about .text_box span{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.about .text_box button{
+    padding: 6px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--gold);
+}
+.about .text_box button:hover{
+    opacity: 0.90;
+}
+.about .opinions{
+    padding-left: 2%;
+    padding-right: 4%;
+    width: 25%;
+    border-left: 1px solid #c9a14b57;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.opinions p{
+    font-size: 22px;
+    color: var(--gold);
+}
+.opinions span{
+    font-size: 16px;
+}
+
+/* ================= contact ================== */
+
+.contact{
+    color: var(--navy);
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.contact .text_box{
+    width: 35%;
+}
+.contact p.address{
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+}
+.contact p.address::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 30px;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--navy);
+}
+.contact h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.contact span.description{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contact .items{
+    background-color: var(--light-gray);
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.contact .contact_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-gray);
+}
+.contact .contact_item:last-child{
+    border: none;
+}
+.contact .icon{
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.contact .text p{
+    font-size: 16px;
+}
+.contact .text span{
+    font-size: 14px;
+}
+.contact .text .phone{
+    font-family: serif;
+    font-size: 12px;
+}
+.contact .text .below{
+    font-size: 12px;
+    color: #61615f;
+}
+.contact .form_box{
+    width: 65%;
+    background-image: url(img/contact.png);
+    background-size: cover;
+    padding: 20px;
+    border: 1px solid var(--muted);
+    border-radius: 5px;
+}
+.contact .input_box{
+    position: relative;
+    padding: 10px 0;
+    width: 100%;
+}
+.contact .input_box i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact .area_box i{
+    top: 28px;
+}
+.contact input,
+.contact textarea{
+    padding-left: 35px;
+    height: 35px;
+    width: 100%;
+    background-color: #f0eeee85;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+.contact input:focus,
+.contact textarea:focus{
+    outline: 2px solid;
+}
+.contact textarea{
+    height: 100px;
+    padding-top: 8px;
+}
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color: var(--navy);
+}
+.contact button{
+    background-color: var(--navy);
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+.contact button:hover{
+    background-color: var(--navy-hover);
+}
+/* =========== footer ================ */
+
 .last_footer{
-    background-color: #002;
-    border-top: 1px solid #cececed5;
+    background-color: var(--navy);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 15px 5%;
-    margin-top: 10px;
     font-size: 16px;
 }
 .last_footer .icons{
@@ -671,7 +868,27 @@ button.learn-more:hover .button-text {
     cursor: pointer;
     scale: 1.1;
 }
-
+@media screen and (max-width: 1298px){
+    .about{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .about .right_part{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about .opinions{
+        flex-direction: row;
+        padding: 20px 5%;
+        border-left: none;
+        gap: 40px;
+        text-align: center;
+        align-self: center;
+        border-top: 1px solid rgb(112, 112, 112);
+        min-width: fit-content;
+    }
+}
 @media screen and (max-width: 1128px){
     .all_sections{
         flex-wrap: wrap;
@@ -710,7 +927,7 @@ button.learn-more:hover .button-text {
         padding: 0;
     }
     .support > :nth-child(-n + 3){
-        border-right: 1px solid rgb(218, 216, 216);
+        border-right: 1px solid var(--border-gray);
         padding-right: 25px;
     }
     .support > :nth-last-child(-n + 3){
@@ -724,6 +941,7 @@ button.learn-more:hover .button-text {
     }
     .trip{
         width: 100%;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 950px){
@@ -777,6 +995,16 @@ button.learn-more:hover .button-text {
         height: 1px;
         width: 100%;
     }
+    .contact{
+        flex-direction: column;
+        align-items: start;
+    }
+    .contact .text_box{
+        width: 100%;
+    }
+    .contact .form_box{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 778px){
     .home h2{
@@ -809,5 +1037,21 @@ button.learn-more:hover .button-text {
         min-width: 200px;
         flex: 1;
         flex-shrink: 0;
+    }
+    .about .right_part{
+        width: 100%;
+        padding-right: 5%;
+    }
+    .about .right_part img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 490px){
+    .about .right_part{
+        width: 100%;
+        padding-right: 5%;
+    }
+    .about .right_part img{
+        width: 100%;
     }
 }
